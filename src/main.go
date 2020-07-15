@@ -23,7 +23,7 @@ var BuiltAt string
 // main implements the main runnable of the application
 func main() {
 	// Grab the command-line flags
-	debug := flag.Bool("d", false, "Enable debug mode")
+	debug := flag.Bool("d", true, "Enable debug mode")
 	flag.Parse()
 
 	// We need to get the acutal working directory to ensure proper operation

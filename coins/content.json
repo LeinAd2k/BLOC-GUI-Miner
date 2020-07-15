@@ -5,6 +5,10 @@
       "coin_algo": "cryptonight_haven"
     },
     {
+      "coin_type": "nashcash",
+      "coin_algo": "turtlecoin_xmrstak_notsupported"
+    },
+    {
       "coin_type": "turtlecoin",
       "coin_algo": "turtlecoin_xmrstak_notsupported"
     },
@@ -92,6 +96,7 @@
     "aeon": false,
     "arqma": true,
     "iridium": true,
+    "nashcash": true,
     "wownero": true
   },
   "xmrStakSupport": {
@@ -112,6 +117,7 @@
     "aeon": false,
     "arqma": false,
     "iridium": true,
+    "nashcash" : false,
     "wownero": false
   },
   "xmrigAlgo": {
@@ -132,6 +138,7 @@
     "aeon": "cn-lite/1",
     "arqma": "rx/arq",
     "iridium": "cn-pico",
+    "nashcash": "argon2/chukwa",
     "wownero": "rx/wow"
   },
   "xmrigVariant": {
@@ -152,11 +159,12 @@
     "aeon": "aeon",
     "arqma": "arqma",
     "iridium": "arqma",
+    "nashcash": "1",
     "wownero": "wownero"
   },
   "names": {
     "bloc": "BLOC",
-    "turtlecoin": "TurtleCoin",
+    "turtlecoin": "NashCash",
     "ryo": "RYO",
     "haven": "Haven",
     "monero": "Monero",
@@ -172,11 +180,12 @@
     "aeon": "AEON",
     "arqma": "ArQmA",
     "iridium": "Iridium",
+    "nashcash": "NashCash",
     "wownero": "Wownero"
   },
   "icons": {
     "bloc": "static/img/coins-icons/bloc.png",
-    "turtlecoin": "static/img/coins-icons/turtlecoin.png",
+    "turtlecoin": "static/img/coins-icons/nashcash.png",
     "ryo": "static/img/coins-icons/ryo.png",
     "haven": "static/img/coins-icons/haven.png",
     "monero": "static/img/coins-icons/monero.png",
@@ -192,11 +201,12 @@
     "aeon": "static/img/coins-icons/aeon.png",
     "arqma": "static/img/coins-icons/arqma.png",
     "iridium": "static/img/coins-icons/iridium.png",
+    "nashcash": "static/img/coins-icons/nashcash.png",
     "wownero": "static/img/coins-icons/wownero.png"
   },
   "abbreviation": {
     "bloc": "BLOC",
-    "turtlecoin": "TRTL",
+    "turtlecoin": "NaCA",
     "ryo": "RYO",
     "haven": "XHV",
     "monero": "XMR",
@@ -212,11 +222,12 @@
     "aeon": "AEON",
     "arqma": "ARQ",
     "iridium": "IRD",
+    "nashcash": "NaCa",
     "wownero": "WOW"
   },
   "addressPrefix": {
     "bloc": "abLoc",
-    "turtlecoin": "TRTL",
+    "turtlecoin": "NaCa",
     "ryo": "RYoL",
     "haven": "hvx",
     "monero": "4",
@@ -232,11 +243,12 @@
     "aeon": "W",
     "arqma": "ar",
     "iridium": "ir",
+    "nashcash": "NaCa",
     "wownero": "W"
   },
   "addressValidation": {
     "bloc": "^abLoc([a-zA-Z0-9]{94}|[a-zA-Z0-9]{182})$",
-    "turtlecoin": "^TRTL([a-zA-Z0-9]{95}|[a-zA-Z0-9]{183})$",
+    "turtlecoin": "^NaCa([a-zA-Z0-9]{94}|[a-zA-Z0-9]{182})$",
     "ryo": "^RYo([a-zA-Z0-9]{96}|[a-zA-Z0-9]{103})$",
     "haven": "^hvx([a-zA-Z0-9]{95})$",
     "monero": "^4([a-zA-Z0-9]{94}|[a-zA-Z0-9]{105})$",
@@ -252,6 +264,7 @@
     "aeon": "^W([a-zA-Z0-9]{96})$",
     "arqma": "^ar([a-zA-Z0-9]{95})$",
     "iridium": "^ir([a-zA-Z0-9]{95})$",
+    "nashcash": "^NaCa([a-zA-Z0-9]{94}|[a-zA-Z0-9]{182})$",
     "wownero": "^W([a-zA-Z0-9]{96})$"
   },
   "mainBackground": {
@@ -323,6 +336,10 @@
       "image": "static/img/iridium/bg-miner-mining.png", 
       "color": "#a50606"
     },
+    "nashcash": {
+      "image": "static/img/nashcash/bg-miner-mining.png", 
+      "color": "#a50606"
+    },
     "wownero": {
       "image": "static/img/wownero/bg-miner-mining.png", 
       "color": "#86006e"
@@ -346,6 +363,7 @@
     "aeon": "#61bdd2",
     "arqma": "#e2deb8",
     "iridium": "#ffed00",
+    "nashcash": "#ffed00",
     "wownero": "86006e"
   },
   "boxColor": {
@@ -366,6 +384,7 @@
     "aeon": "#174450",
     "arqma": "#3c0f90",
     "iridium": "#dd592c",
+    "nashcash": "#090a31",
     "wownero": "626262"
   },
   "boxBorder": {
@@ -385,6 +404,7 @@
     "aeon": "#222",
     "arqma": "#222",
     "iridium": "#222",
+    "nashcash": "#222",
     "wownero": "#222"
   },
   "logo": {
@@ -405,6 +425,7 @@
     "aeon": "static/img/aeon/logo.png",
     "arqma": "static/img/arqma/logo.png",
     "iridium": "static/img/iridium/logo.png",
+    "nashcash": "static/img/nashcash/logo.png",
     "wownero": "static/img/wownero/logo.png"
   },
   "downloadPage": {
@@ -476,6 +497,10 @@
         "title": "Iridium Applications",
         "link": "https://ird.cash/#custompage1"
       },
+      "nashcash": {
+        "title": "NashCash Applications",
+        "link": "https://nashcash.net"
+      },
       "wownero": {
         "title": "Wownero Applications", 
         "link": "http://wownero.org/#resources"
@@ -499,6 +524,7 @@
     "aeon": "https://www.coingecko.com/en/coins/aeon",
     "arqma": "https://www.coingecko.com/en/coins/arqma",
     "iridium": "https://www.coingecko.com/en/coins/iridium",
+    "nashcash": "https://www.coingecko.com/en/coins/nashcash",
     "wownero": "https://www.coingecko.com/en/coins/wownero"
   },
   "socialLinks": {
@@ -709,6 +735,20 @@
       ]
     },
     "iridium": {
+      "title": "Social Network", 
+      "links": [
+        {"link": "https://discordapp.com/invite/6y2p6Qj", "img": "static/img/miner/network_icon_discord.png"},
+        {"link": "https://ird.cash/category/news/", "img": "static/img/miner/network_icon_medium.png"},
+        {"link": "https://bitcointalk.org/index.php?topic=2150442.0", "img": "static/img/miner/network_icon_bitcointalk.png"},
+        {"link": "https://github.com/iridiumdev", "img": "static/img/miner/network_icon_github.png"},
+        {"link": "https://twitter.com/iridiumCash", "img": "static/img/miner/network_icon_twatter.png"},
+        {"link": "https://ird.cash/", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://reddit.com/r/IridiumCoin", "img": "static/img/miner/network_icon_website.png"},
+        {"link": "https://t.me/joinchat/GizWw0sK9LW8DAu4hAeWnA", "img": "static/img/miner/network_icon_telegram.png"},
+        {"link": "https://www.facebook.com/207676106483596", "img": "static/img/miner/network_icon_facbook.png"}
+      ]
+    },
+    "nashcash": {
       "title": "Social Network", 
       "links": [
         {"link": "https://discordapp.com/invite/6y2p6Qj", "img": "static/img/miner/network_icon_discord.png"},
@@ -938,6 +978,16 @@
         {"link": "https://ird.cash/market/", "text": "- Market"}
       ]
     },
+    "nashcash": {
+      "title": "NaCa Network", 
+      "links": [
+        {"link": "https://nashcash.net", "text": "- Official Website"},
+        {"link": "https://paper.nashcash.net", "text": "- NashCash Paper Wallet"},
+        {"link": "https://trtl.services", "text": "-  Services"},
+        {"link": "https://explorer.nashcash.net", "text": "- Block Explorer"},
+        {"link": "https://explorer.turtlepay.io/pools.html", "text": "- NashCash Pools"}
+      ]
+    },
     "wownero": {
       "title": "Wownero Network", 
       "links": [
@@ -1163,6 +1213,17 @@
         {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Iridium brings. <a href=\"https://ird.cash\">Click here/a> to see list of the merchants that we know of that currently accept IRD for their goods and services."}
       ]
     },
+    "nashcash": {
+      "boxes": [
+        {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
+        {"icon": "static/img/whatsnext/img-02.png", "title": "Learn more about Iridium", "text": "<a href=\"https://ird.cash\">Iridium</a> takes advantage of the technology behind CryptoNote by pulling together the best features that privacy coins can offer the world."},
+        {"icon": "static/img/whatsnext/img-04.png", "title": "Join our amazing community.", "text": "Iridium is nothing without it's amazing and friendly community. Come and socialise with us on the <a href=\"https://github.com/iridiumdev\">GitHub</a> or <a href=\"https://reddit.com/r/IridiumCoin\">Reddit</a>."},
+        {"icon": "static/img/whatsnext/img-05.png", "title": "Trading IRD on exchange", "text": "Buy and Sell IRD on following exchanges: <ul class=\"list-unstyled\"><li><a href=\"https://tradeogre.com/exchange/BTC-IRD\">- Tradeogre</a></li><li><a href=\"https://crex24.com/exchange/IRD-BTC\">- CREX24</a></li></ul>"},
+        {"icon": "static/img/whatsnext/img-06.png", "title": "Follow Iridium on social media", "text": "We are updating all our social network regulary, the best way to stay updated with IRD is to follow us on <a href=\"https://twitter.com/iridiumCash\">Twitter</a>."},
+        {"icon": "static/img/whatsnext/img-08.png", "title": "Need more help ? We got you covered", "text": "If this is your first time hearing about IRD, we recommend starting by visiting the official <a href=\"https://ird.cash\">ird.cash</a> website but also <a href=\"https://wiki.ird.cash/\">Wiki</a> and read precious informations."},
+        {"icon": "static/img/whatsnext/img-09.png", "title": "Merchants & Services", "text": "Merchants of all kinds have come to value the financial privacy that Iridium brings. <a href=\"https://ird.cash\">Click here/a> to see list of the merchants that we know of that currently accept IRD for their goods and services."}
+      ]
+    },
     "wownero": {
       "boxes": [
         {"icon": "static/img/whatsnext/img-01.png", "title": "Visit your mining pool to know more", "text": "You get paid out based upon what the pool sets the min payout amount. A pool's min payout amount can vary from pool to pool. Click on the pool link to visit their website."},
@@ -1203,6 +1264,7 @@
       "aeon": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=24&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
       "arqma": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=47&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
       "iridium": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=48&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
+      "nashcash": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=107&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>",
       "wownero": "<iframe src=\"https:\/\/www.cryptunit.com\/widgets\/1.php?coin=49&small=false&transparent=true&black=false\" height=\"270\" width=\"100%\" frameBorder=\"0\" style=\"overflow:hidden;\" scrolling=\"no\" ><\/iframe>"
   },
   "newsBox": {
@@ -1288,6 +1350,11 @@
       },
       "iridium": {
           "title": "IRD available soon on:",
+          "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
+          "link": "https://paychange.com"
+      },
+      "nashcash": {
+          "title": "NaCa available soon on:",
           "image": "https://raw.githubusercontent.com/furiousteam/BLOC-GUI-Miner/master/src/resources/app/static/img/paychange.png",
           "link": "https://paychange.com"
       },

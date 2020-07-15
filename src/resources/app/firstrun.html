@@ -22,7 +22,7 @@
 		<!-- welcome message -->
 		<div class="main-section welcome text-center">
 			<img src="static/img/logo.png"><br />
-			<div class="miner-title">BLOC GUI Miner v1.1.4</div>
+			<div class="miner-title">NashCash GUI Miner v1.0.0</div>
 			<div class="message-bg">
 				<div class="message-title">Welcome <span id="username"></span>!</div>
 				<div class="message-text">We love to see you using our miner<br />
@@ -34,14 +34,14 @@
 		<div class="main-section hidden choose-wallet text-center" id="choose-wallet">
 			<img src="static/img/yellow-logo.png"><br />
 			<div class="miner-title">MINER SETUP</div>
-			<div class="wallet-bg first"><a href="#" data-target="miner-address">I ALREADY HAVE A BLOC WALLET ADDRESS</a></div>
-			<div class="wallet-bg"><a href="#" data-target="select-wallet">I DO NOT HAVE A BLOC WALLET ADDRESS</a></div>
+			<div class="wallet-bg first"><a href="#" data-target="miner-address">I ALREADY HAVE A NASHCASH WALLET ADDRESS</a></div>
+			<div class="wallet-bg"><a href="#" data-target="select-wallet">I DO NOT HAVE A NASHCASH WALLET ADDRESS</a></div>
 			<div class="wallet-bg last"><a href="#" data-target="other-currencies">I WANT TO MINE OTHER CRYPTOCURRENCIES</a></div>
-			<div class="wallet-note">BLOC GUI Miner is a beautiful, easy to use, Graphical User interface for mining cryptocurrencies based on Cryptonote.<br />
-			If this is your first time hearing about BLOC, we recommend starting by visiting the <a href="https://bloc.money" target="_blank">BLOC.MONEY</a> website.</div>
-			<div class="wallet-tip">TIPS : Click to find out how you can create your BLOC wallet to send<br />
-			and receive BLOC money to friends or businesses. It's a kind of bank account, but way more secure.<br />
-			It is safe to share your BLOC wallet address.</div>
+			<div class="wallet-note">NashCash GUI Miner is a beautiful, easy to use, Graphical User interface for mining cryptocurrencies based on Cryptonote.<br />
+			If this is your first time hearing about BLOC, we recommend starting by visiting the <a href="https://nashcash.net" target="_blank">NashCash</a> website.</div>
+			<div class="wallet-tip">TIPS : Click to find out how you can create your wallet to send<br />
+			and receive NashCash to friends or businesses. It's a kind of bank account, but way more secure.<br />
+			It is safe to share your wallet address.</div>
 		</div>
 		
 		<!-- choose another currency to mine -->
@@ -50,11 +50,11 @@
 			<div class="currencies-title">MINE ANOTHER CRYPTOCURRENCY</div>
 			<div class="currencies-text" id="coins-title"><!--Besides BLOC, you can mine Monero (XMR), Haven (XHV), TurtleCoin (TRTL) with this miner.--></div>
 			<div id="currencies-selector">
-				<!--
+				
 				<div class="currency-bg first"><a href="#" class="currency-btn" data-coin_type="monero" data-coin_algo="cryptonight">Monero (XMR)</a></div>
 				<div class="currency-bg"><a href="#" class="currency-btn" data-coin_type="haven" data-coin_algo="cryptonight_haven">Haven (XHV)</a></div>
 				<div class="currency-bg last"><a href="#" class="currency-btn" data-coin_type="turtlecoin" data-coin_algo="cryptonight_lite_v7">TurtleCoin (TRTL)</a></div>
-				-->
+			
 			</div>
 			<a href="#" class="hidden" data-target="miner-address" id="other-currencies-next-step"></a>
 			<div class="currencies-back"><a href="#" data-target="choose-wallet"><---- BACK</a></div>
@@ -86,7 +86,7 @@
 			<img src="static/img/miner-setup-logo.png"><br />
 			<div class="address-title">WALLET ADDRESS SETUP</div>
 			<div id="miner-address-content">
-				<div class="address-text">This is your personnal BLOC address from you previously created wallet. It must start with the characters <span>abLoc</span><br />
+				<div class="address-text">This is your personal address from you previously created wallet. It must start with the characters <span>NaCa</span><br />
 				Once you start mining with a wallet address any coins and shares earned will be under that wallet. The address you are going to receive your payments.</div>
 				<div class="address-input"><input type="text" name="" value="" placeholder="Type or paste your BLOC address here. Starts with (abLoc)" class="text-center" id="miner-address-input" /></div>
 			</div>
@@ -107,14 +107,14 @@
 			
 			<div class="row">
 				<div class="col-xs-4">
-					<div class="select-wallet-col-title"><a href="https://paperwallet.bloc.money">PAPER WALLET</a></div>
+					<div class="select-wallet-col-title"><a href="https://paper.nashcash.net">PAPER WALLET</a></div>
 					<div class="select-wallet-text">The main purpose of a paper wallet is to quickly create a wallet to start receiving funds. You will not be able to spend or send your funds to other people until you set up a wallet application.</div>
 				</div>
 				<div class="col-xs-4">
-					<div class="select-wallet-col-title"><a href="https://bloc.money/download">GUI WALLET</a></div>
-					<div class="select-wallet-text">GUI Stands for Graphical User Interface. It makes it easy for you to use BLOC with a friendly user interface. BLOC GUI Wallet makes getting started with BLOC on desktop easier than ever. Available for Windows, Mac OS and Linux.</div>
+					<div class="select-wallet-col-title"><a href="https://github.com/Nash-Cash/NashCash-GUI-Wallet/releases/latest">GUI WALLET</a></div>
+					<div class="select-wallet-text">GUI Stands for Graphical User Interface. It makes it easy for you to use NashCash with a friendly user interface. The GUI Wallet makes getting started with NashCash on desktop easier than ever. Available for Windows, Mac OS and Linux.</div>
 				</div>
-				<div class="col-xs-4">
+			<!--	<div class="col-xs-4">
 					<div class="select-wallet-col-title"><a href="https://itunes.apple.com/us/app/bloc-wallet-by-furiousteam-ltd/id1437924269?mt=8">IPHONE WALLET</a></div>
 					<div class="select-wallet-text">The 1st BLOC wallet for iOS with a focus on accessibility, security and simplicity. BLOC wallet makes getting started with BLOC easier than ever. Download from the Apple Store. Android version is coming before the end of this year (2018).</div>
 				</div>
@@ -125,15 +125,16 @@
 					<div class="select-wallet-col-title"><a href="https://t.me/bloc_wallet_bot">TELEGRAM WALLET</a></div>
 					<div class="select-wallet-text">Telegram is the #1 chat used by the crypto community. BLOC Wallet Telegram BOT makes BLOC instantly available to over 200 million+ users worldwide and multi OS & devices. Including exclusive features like sleep mining.</div>
 				</div>
-				<div class="col-xs-4">
-					<div class="select-wallet-col-title"><a href="https://bloc.money/download">CLI WALLET</a></div>
-					<div class="select-wallet-text">The CLI Wallet, called BLOCWallet, is a multi-platform program (Win/Linux/Mac) that requires you to enter commands and you cannot use your mouse. It is text only application that does not have a graphical interface. However, it is currently the most stable and gets the newest updates first.</div>
+				<div class="col-xs-4"> -->
+					<div class="select-wallet-col-title"><a href="https://github.com/Nash-Cash/NashCash/releases/latest">WALLET-CLI</a></div>
+					<div class="select-wallet-text">The Wallet-Cli is a multi-platform program (Win/Linux/Mac) that requires you to enter commands and you cannot use your mouse. It is text only application that does not have a graphical interface. However, it is currently the most stable and gets the newest updates first.</div>
 				</div>
+			<!--	
 				<div class="col-xs-4">
 					<div class="select-wallet-col-title"><a href="https://bloc.money/download">WEB WALLET</a></div>
 					<div class="select-wallet-text">We are working on a new web wallet to replace the actual dashboard and introduce new features. The web wallet will be compatible with android cell phones as well. More details coming soon.</div>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="select-wallet-back"><a href="#" data-target="choose-wallet"><---- BACK</a></div>
 			<div class="select-wallet-continue"><a href="#" data-target="miner-address">CONTINUE ----></a></div>
@@ -156,7 +157,7 @@
 					<div class="clearfix"></div>
 				</div>
 				<div class="table-inner" id="pool-list">
-					<!--
+					
 					<div class="table-body" data-id="1">
 						<div class="table-col text-left">bloc-mining.eu <span>(official pool)</span></div>
 						<div class="table-col opacity">868 H/S</div>
@@ -184,7 +185,7 @@
 						<div class="table-col text-right opacity">5 hours, 39 minutes</div>
 						<div class="clearfix"></div>
 					</div>
-					-->
+				
 				</div>
 			</div>
 
